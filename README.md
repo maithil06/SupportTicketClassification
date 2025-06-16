@@ -54,3 +54,21 @@ This project benchmarks multiple machine learning models:
    ```bash
    python -m venv venv
    source venv/bin/activate  # Windows: venv\Scripts\activate
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Download NLTK data:
+   ```bash
+   import nltk
+   nltk.download('punkt')
+
+## 📈 Performance
+Optimized models (Tuned Logistic Regression, LightGBM, Fine-Tuned Transformers) achieved **>92% accuracy** on the hold-out test set, showcasing a robust classification system.
+
+## 🔮 Future Improvements
+- **Experiment Tracking**: Integrate MLflow for logging experiments.
+- **Web Interface**: Develop a Flask/Streamlit UI for predictions.
+- **API Deployment**: Deploy as a REST API for integration with Zendesk/Freshdesk.
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
